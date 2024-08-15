@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successfully Paid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .ref-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 0.5em;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body onload="showRandomNumber();">
+    <h1>Thank You For Your Payment!</h1>
+    <p>Our team will reach out to you soon.</p>
+    <p>Reference No.: <span class="ref-number" id="myNumber"></span></p>
+    <p>REDIRECTING ... ... ... </p>
+    <p id="second">5</p><span> seconds</span>
+
+    <script src="https://randojs.com/1.0.0.js"></script>
+    <script>
+        function showRandomNumber(){
+            document.getElementById("myNumber").innerHTML = rando(10000000000, 99999999999);
+        }
+    </script>
+    <script>
+        i = 5
+        window.setTimeout(function(){
+            window.location.href = "./";
+        }, 5000);
+        timeLeft = 5;
+
+function countdown() {
+	timeLeft--;
+	document.getElementById("second").innerHTML = String( timeLeft );
+	if (timeLeft > 0) {
+		setTimeout(countdown, 1000);
+	}
+};
+
+setTimeout(countdown, 1000);
+    </script>
+</body>
+</html>

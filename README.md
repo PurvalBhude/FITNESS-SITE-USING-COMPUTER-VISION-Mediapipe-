@@ -16,4 +16,11 @@ The Exercise Angle and Count Tracker is a web-based application designed to help
 - **OpenCV:** For image processing and manipulation.
 - **HTML/CSS/JavaScript:** For building the web-based user interface.
 
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the <a href="https://github.com/PurvalBhude/FITNESS-SITE-USING-COMPUTER-VISION-Mediapipe-/blob/main/LICENSE">LICENSE</a> file for details.
+
+
 Made with ❤️ by Purval Bhude. For more about me and my work, visit my <a href="https://purvalbhude.github.io/Portfolio-Website/">Portfolio</a> or <a href="www.linkedin.com/in/purvalbhude">LinkedIn</a>.
